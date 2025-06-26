@@ -3,3 +3,4 @@ def solution(my_string):
 
 print(solution("hello"))
 print(solution("jaron"))
+print(solution("python"))
