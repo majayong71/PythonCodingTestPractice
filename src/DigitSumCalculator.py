@@ -15,6 +15,7 @@
 # 9 + 3 + 0 + 2 + 1 + 1 = 16을 return합니다.
 
 
+
 def solution(n):
     total = 0
     for digit in str(n):
