@@ -8,14 +8,16 @@
  0 ≤ n ≤ 1,000,000
 """
 
-def solution (n):
-    coins = [500, 100, 50, 10]
-    return sum(n // coin for coin in coins if (n := n % coin)or True)
 
-def solution2 (n):
+def solution(n):
+    coins = [500, 100, 50, 10]
+    return sum(n // coin for coin in coins if (n := n % coin) or True)
+
+
+def solution2(n):
     count = 0
 
-    #큰 단위의 화폐부터 차례대로 확인
+    # 큰 단위의 화폐부터 차례대로 확인
     coin_types = [500, 100, 50, 10]
 
     # % 는 나머지를 구하는 연산자이고, //은 정수 나눗셈을 의미합니다.
@@ -26,11 +28,9 @@ def solution2 (n):
         n %= coin
     return count
 
+
 print(solution2(1260))
 print(solution2(2660))
-
-
-
 
 print(solution(1260))
 print(solution(2660))
