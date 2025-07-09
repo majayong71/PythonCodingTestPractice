@@ -28,9 +28,6 @@ def solution(s):
 print(solution("02984"))  # Output: 576
 print(solution("20654"))  # Output: 240
 
-if __name__ == '__main__':
-
-
 """
 result 에 s 의 첫번째 문자를 int 로 변환하고 저장
 for char in s[1:] : char 라는 변수값에 s의 두번째값부터 마지막값까지 넣으면서 반복문 시작
