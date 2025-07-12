@@ -31,3 +31,18 @@ N킬로그램을 배달해야 한다.
 def solution(n):
     count = 0
 
+    while n >= 0:
+        if n % 5 ==0:
+            return count + (n//5)
+        n -=3
+        count += 1
+
+    return -1
+
+# Test cases
+print(solution(18))  # Output: 4
+print(solution(4))   # Output: -1
+print(solution(6))   # Output: 2
+print(solution(9))   # Output: 3
+print(solution(11))  # Output: 3
+print(solution(15))  # Output: 3
