@@ -31,4 +31,3 @@ N킬로그램을 배달해야 한다.
 def solution(n):
     count = 0
 
-    while n >= 0:
