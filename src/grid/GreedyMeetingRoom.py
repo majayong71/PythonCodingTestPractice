@@ -65,3 +65,32 @@ def solution():
 
 if __name__ == '__main__':
     solution()
+
+"""
+
+def solution():
+    n = int(input())  # 회의 개수
+    meetings = []
+
+    # 회의 시작시간과 끝나는 시간 입력 받기
+    for _ in range(n):
+        start, end = map(int, input().split())
+        meetings.append((start, end))
+
+    # 끝나는 시간을 기준으로 오름차순 정렬 끝나는 시간이 같다면
+    # 시작이 빠른 회의를 먼저 본다.
+    meetings.sort(key=lambda x: (x[1], x[0]))
+
+    count = 0  # 선택한 회의 개수
+    end_time = 0  # 마지막 회의 끝난 시간
+
+    for start, end in meetings:
+        if start >= end_time:  # 현재 회의가 이전 회의 끝난 이후 시작하면
+            count += 1  # 회의 선택
+            end_time = end  # 끝나는 시간 갱신
+
+    print(count)
+
+if __name__ == '__main__':
+    solution()
+"""
