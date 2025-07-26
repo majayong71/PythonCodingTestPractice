@@ -46,5 +46,4 @@ def solution():
     print(minimum, maximum)
 
 if __name__ == '__main__' :
-
     solution()
