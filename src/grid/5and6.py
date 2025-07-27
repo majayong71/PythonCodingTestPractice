@@ -32,6 +32,7 @@
 
 
 def solution():
+
     a, b = input().split()  # 문자열로 받기!
 
     # 각 숫자에 대해 최솟값/최댓값 버전 만들기
