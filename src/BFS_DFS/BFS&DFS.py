@@ -63,16 +63,16 @@ def solve_dfs_bfs():
 
     # 4. DFS 구현
     def dfs(start):
-        visited = [False] * (n + 1)
-        result = []
+        visited = [False] * (n + 1) # 방문 체크 배열
+        result = []                 # 방문 순서 저장
 
-        def dfs_recursive(node):
-            visited[node] = True
-            result.append(node)
+        def dfs_recursive(node):      # 재귀 함수
+            visited[node] = True      # 현재 노드 방문 표시
+            result.append(node)       # 결과에 추가
 
-            for neighbor in graph[node]:
-                if not visited[neighbor]:
-                    dfs_recursive(neighbor)
+            for neighbor in graph[node]:  # 인접한 모든 노드 확인
+                if not visited[neighbor]: # 아직 방문 안 한 노드라면
+                    dfs_recursive(neighbor) # 재귀 호출로 깊이 탐색
 
         dfs_recursive(start)
         return result
