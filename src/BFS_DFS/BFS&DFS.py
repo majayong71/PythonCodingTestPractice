@@ -61,7 +61,7 @@ def solve_dfs_bfs():
     for i in range(1, n + 1):
         graph[i].sort()
 
-    # 4. DFS 구현
+    # 4. DFS 구현        재귀 or  stack 스택
     def dfs(start):
         visited = [False] * (n + 1) # 방문 체크 배열
         result = []                 # 방문 순서 저장
