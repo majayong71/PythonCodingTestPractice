@@ -47,12 +47,12 @@ from collections import deque
 
 def solve_dfs_bfs():
     # 1. 입력받기
-    n, m, v = map(int, input().split())
+    n, m, v = map(int, input().split()) # 정점 , 간선 , 시작점
 
-    # 2. 그래프 생성 (인접 리스트)
+    # 2. 그래프 생성 (인접 리스트)  2차원 배열 생성과정
     graph = [[] for _ in range(n + 1)]
 
-    for _ in range(m):             # 2차원 배열 생성과정
+    for _ in range(m):             # 입력받은 m 만큼 반복 (간선)
         a, b = map(int, input().split()) # 간선 연결 과정
         graph[a].append(b)
         graph[b].append(a)
