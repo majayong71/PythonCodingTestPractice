@@ -52,8 +52,8 @@ def solve_dfs_bfs():
     # 2. 그래프 생성 (인접 리스트)
     graph = [[] for _ in range(n + 1)]
 
-    for _ in range(m):
-        a, b = map(int, input().split())
+    for _ in range(m):             # 2차원 배열 생성과정
+        a, b = map(int, input().split()) # 간선 연결 과정
         graph[a].append(b)
         graph[b].append(a)
 
