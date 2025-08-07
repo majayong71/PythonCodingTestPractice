@@ -30,5 +30,9 @@
 예시 입력          출력예시
 5                 3 4
 R R R U D D
+
 """
+
+def solution() :
+    n = int(input())
 
