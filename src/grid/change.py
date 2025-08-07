@@ -8,6 +8,20 @@
  0 ≤ n ≤ 1,000,000
 """
 
+# n값이 주어질 때 ( 입력이든 , 함수의 매개변수든 )
+# 최소한의 동전 개수를 return 하도록 solution을 완성
+# 500 , 100 , 50 , 10 이 있고
+# n을 최소한의 동저 갯수를 구하자
+
+def solutin3():
+    n = input(int())
+    count = 0
+    coins = [500, 100, 50, 10]
+
+    for coin in coins:
+        count += n // coin
+        n %= coin
+    return count
 
 def solution(n):
     coins = [500, 100, 50, 10]
