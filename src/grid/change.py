@@ -13,6 +13,7 @@
 # 500 , 100 , 50 , 10 이 있고
 # n을 최소한의 동저 갯수를 구하자
 
+
 def solutin3():
     n = input(int())
     count = 0
