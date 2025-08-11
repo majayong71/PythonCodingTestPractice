@@ -34,5 +34,6 @@ R R R U D D
 """
 
 def solution() :
+
     n = int(input())
 
