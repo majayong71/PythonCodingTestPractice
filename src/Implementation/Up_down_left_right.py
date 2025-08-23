@@ -37,5 +37,35 @@ R R R U D D
 
 """
 
+"""
+풀이
+먼저 n 을 입력받고
+움직임을 입력받는다 ex) r r r u d d 같은 
+그리고, 1, 1에서 시작하는 코드를 작성하고
+
+"""
+
 def solution() :
     n = int(input())
+    moves = input().split()
+
+    x, y = 1, 1
+
+    for move in moves:
+        if move == 'L':
+            if y > 1:
+                y -= 1
+        elif move == 'R':
+            if y < n:
+                y += 1
+        elif move == 'u':
+            if x > 1:
+                x -= 1
+        elif move == 'D':
+            if x < n:
+                x += 1
+
+    print(x, y)
+
+if __name__ == '__main__':
+    solution()
