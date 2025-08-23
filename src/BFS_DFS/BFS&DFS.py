@@ -61,19 +61,44 @@ def solve_dfs_bfs():
         graph[b].append(a)
 
     # 3. 정점 번호가 작은 것부터 방문하기 위해 정렬
-    for i in range(1, n + 1):
+    for i in range(1, n + 1):    # graph[] 를 1부터 n+1 까지 정렬하기위해 range(1, n + 1) 을 i에 대입하며 n+1 까지 반복한다
         graph[i].sort()
 
+        """
+        n m v 를 입력받고, 
+        n, m, v = map(int, input().split())
+
+        그래프를 생성한다         
+        graph = [[] for _ in range(n +1)]
+        이렇게 해줘야
+        [], 0번
+        [2, 3, 4], 1번 -> 여러 정점과 연결 
+        [], 2번
+        [], 3번
+        표현이 가능해지기 때문이다.
+        
+        입력받은 m 만큼 반복되는 간선 연결 과정을 만들고
+        for _ in range(m):
+        a, b = map(int, input().split())
+        graph[a].append(b)
+        graph[b].append(a)
+        
+        정점 번호가 작은것부터 방문하기 위해 정렬하고
+        
+        DFS 를 구현한다 재귀 or stack 으로
+        """
+
     # 4. DFS 구현        재귀 or  stack 스택 # start , node 는 call stack 이다
-    def dfs(start):
-        visited = [False] * (n + 1) # 방문 체크 배열
+    def dfs(start): # start 는 시작지점을 지정하는 파라미터이다.
+        visited = [False] * (n + 1) # 방문 체크 배열 (1차원 배열)
         result = []                 # 방문 순서 저장
 
         def dfs_recursive(node):      # 재귀 함수
             visited[node] = True      # 현재 노드 방문 표시
             result.append(node)       # 결과에 추가
 
-            for neighbor in graph[node]:  # 인접한 모든 노드 확인
+            for neighbor in graph[node]:  # 인접한 모든 노드 확인 ex) graph[1] = [2, 3, 4]
+                                          # neighbor 는 graph[node] 에서 하나씩 꺼내는 역할 2 가됐다가 3 , 4 가 되는것이다.
                 if not visited[neighbor]: # 아직 방문 안 한 노드라면
                     dfs_recursive(neighbor) # 재귀 호출로 깊이 탐색
 
