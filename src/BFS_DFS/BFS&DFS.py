@@ -117,19 +117,22 @@ def solve_dfs_bfs():
 
     # 5. BFS 구현
     def bfs(start):
-        visited = [False] * (n +1)
-        queue = deque([start])
+        visited = [False] * (n +1) # 똑같이 방문 체크 배열을 만들어준다 ( 1차원 배열 )
+        queue = deque([start])     # deque([start]) 시작점부터 진행한다는 뜻.
         visited[start] = True
         result = []
 
-        while queue:
-            node = queue.popleft()
-            result.append(node)
+        while queue:               # queue 에 값이 있는 동안에 반복하는 구문 (값이 있으면 True, 없으면 False , False 일 때 종료)
+            node = queue.popleft() # queue에 들어있는 값을 빼서 node 에 저장한다
+                                   # ex) # 예시: queue = deque([1, 2, 3])
+                                   # node = queue.popleft()  # 맨 앞의 1을 꺼냄
+                                   # 결과: node = 1, queue = deque([2, 3])
+            result.append(node)    # node 에 임시적으로 저장된 값들을 result 에 저장
 
-            for neighbor in graph[node]:
-                if not visited[neighbor]:
-                    visited[neighbor] = True
-                    queue.append(neighbor)
+            for neighbor in graph[node]:  # 현재 노드와 연결된 모든 이웃들을 하나씩 확인해서,
+                if not visited[neighbor]: # 아직 방문하지 않은 이웃을 큐에 예약한다.
+                    visited[neighbor] = True # 방문표시를 true 로 변경하고
+                    queue.append(neighbor) # 이웃값을 queue 에 추가
 
         return result
 
