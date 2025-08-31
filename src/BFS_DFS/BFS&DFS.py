@@ -143,6 +143,7 @@ def solve_dfs_bfs():
     print(''.join(map(str, dfs_result)))
     print(''.join(map(str, bfs_result)))
 
+
 # 함수 실행
 solve_dfs_bfs()
 
