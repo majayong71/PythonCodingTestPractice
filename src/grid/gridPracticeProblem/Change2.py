@@ -1,4 +1,5 @@
 """
+ㅁ
 타로는 자주 JOI잡화점에서 물건을 산다. JOI잡화점에는 잔돈으로
  500엔, 100엔, 50엔, 10엔, 5엔, 1엔이 충분히 있고, 언제나 거스름돈 개수가 가장 적게 잔돈을 준다.
 타로가 JOI잡화점에서 물건을 사고 카운터에서 1000엔 지폐를 한장 냈을 때,
@@ -18,6 +19,24 @@
 1
 예제 출력 2
 15
+"""
+
+"""
+def solution():
+    taro_paid = 1000
+    price = int(input())
+    
+    changes = taro_paid - price
+    
+    coins = [500, 100, 50, 10, 5, 1]
+    count = 0
+    
+    for coin in coins :
+    count += changes // coin
+    changes = changes % coin
+    
+    return print(count)
+    
 """
 
 def solution():
@@ -46,7 +65,7 @@ def solution():
     return total
 
 if __name__ == "__main__":
-    print(solution())
+    print(solution2())
     # 예제 입력 1: 380
     # 예제 출력 1: 4
     # 예제 입력 2: 1

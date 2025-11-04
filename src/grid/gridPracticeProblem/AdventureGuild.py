@@ -37,6 +37,7 @@ print(solution([1,2,2,3,3]))  # Output: 2
 
 # 입력 방식 으로 푸는 경우
 if __name__ == '__main__':
+
     n = int(input())  # 모험가의 수
     fear_levels = list(map(int, input().split()))  # 각 모험가의 공포도 입력
     fear_levels.sort()  # 공포도를 오름차순으로 정렬

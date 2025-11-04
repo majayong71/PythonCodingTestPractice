@@ -1,4 +1,6 @@
 """
+ㅁ
+
 5와 6의 차이 다국어
 시간 제한	메모리 제한	제출	정답	맞힌 사람	정답 비율
 1 초	128 MB	14640	10944	9940	76.157%
@@ -30,13 +32,46 @@
 예제 출력 3
 74580 85582
 """
-
-
 # 5를 6으로 볼 수도 , 6을 5로 볼 수도 있다.
 # 따라서 A , B 두 수가 주어졌을 때, 최소값 , 최댓값을 구해야한다.
 # a b 값을 입력받고 , replace 를 이용해서 6을 5로 , 5를 6으로 바꾼 버전을 만든다. a_min , b_min, a_max, b_max를 만든다.
 # 최소값은 = int(a_min) + int(b_min)
 # 최댓값은 = int(a_max) + int(b_max)
+
+def solution2():
+    a, b = input().split()
+
+    a_min = a.replace('6', '5')
+    b_min = b.replace('6', '5')
+
+    a_max = a.replace('5', '6')
+    b_max = b.replace('5', '6')
+
+    minimum = int(a_min) + int(b_min)
+    maximum = int(a_max) + int(b_max)
+
+    print(minimum , maximum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def solution():
 
@@ -55,4 +90,4 @@ def solution():
     print(minimum, maximum)
 
 if __name__ == '__main__' :
-    solution()
+    solution2()
