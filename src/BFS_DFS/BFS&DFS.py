@@ -147,62 +147,43 @@ def solve_dfs_bfs():
 # 함수 실행
 solve_dfs_bfs()
 
-# """ 답안지 """
-# from collections import deque
-#
-#
-# def solve_dfs_bfs():
-#     n, m, v = map(int, input().split())
-#
-#     graph = [[] for _ in range(n + 1)]
-#
-#     for _ in range(m):
-#         a, b = map(int, input().split())
-#         graph[a].append(b)
-#         graph[b].append(a)
-#
-#     for i in range(1, n + 1):
-#         graph[i].sort()
-#
-#     def dfs(start):
-#         visited = [False] * (n + 1)
-#         result = []
-#
-#         def dfs_recursive(node):
-#             visited[node] = True
-#             result.append(node)
-#
-#             for neighbor in graph[node]:
-#                 if not visited[neighbor]:
-#                     dfs_recursive(neighbor)
-#
-#         dfs_recursive(start)
-#         return result
-#
-#     def bfs(start):  # ✅ 올바른 들여쓰기!
-#         visited = [False] * (n + 1)
-#         queue = deque([start])
-#         visited[start] = True
-#         result = []
-#
-#         while queue:
-#             node = queue.popleft()
-#             result.append(node)
-#
-#             for neighbor in graph[node]:
-#                 if not visited[neighbor]:
-#                     visited[neighbor] = True
-#                     queue.append(neighbor)
-#
-#         return result
-#
-#     # ✅ 함수 호출과 출력 추가!
-#     dfs_result = dfs(v)
-#     bfs_result = bfs(v)
-#
-#     print(' '.join(map(str, dfs_result)))  # ✅ 공백으로 구분!
-#     print(' '.join(map(str, bfs_result)))
-#
-#
-# if __name__ == '__main__':
-#     solve_dfs_bfs()
+# 0. 입력 및 초기화
+def solution2():
+    n, m, v = map(int, input().split())
+
+    graph = [[] for _ in range(n + 1)]
+# 1. 그래프 정보 입력 생성 (인접 리스트) m개의 간선 연결
+    for _ in range(m):
+        a, b = map(int,input().split())
+        graph[a].append(b)
+        graph[b].append(a)
+
+    for i in range(1, n + 1):
+        graph[i].sort()
+
+# 2. dfs
+def dfs(start):
+
+# 3. bfs
+
+def solution3():
+    # 1. 입력받기
+    n, m, v = map(int, input().split())
+
+    # 2. 그래프 생성 (인접 리스트)  2차원 배열 생성과정
+    graph = [[]for _ in range(n + 1)]
+
+    for _ in range(m):
+        a, b = map(int, input().split())
+        graph[a].append(b)
+        graph[b].append(a)
+    # 3. 정점 번호가 작은 것부터 방문하기 위해 정렬
+
+    for i in range(1, n + 1):
+        graph[i].sort()
+
+    # 4. DFS 구현
+
+    def dfs():
+
+    # 5. BFS 구현
