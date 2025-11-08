@@ -161,10 +161,6 @@ def solution2():
     for i in range(1, n + 1):
         graph[i].sort()
 
-# 2. dfs
-def dfs(start):
-
-# 3. bfs
 
 def solution3():
     # 1. 입력받기
@@ -184,6 +180,4 @@ def solution3():
 
     # 4. DFS 구현
 
-    def dfs():
 
-    # 5. BFS 구현
