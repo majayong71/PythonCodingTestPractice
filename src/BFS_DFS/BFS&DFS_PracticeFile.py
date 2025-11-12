@@ -1,3 +1,5 @@
+from collections import deque
+
 # ============= 1. 입력 & 초기화 =============
 
 
@@ -45,7 +47,26 @@ def solution():
         dfs_recursive(start) # start 를 첫 노드로 전달
         return result
 
-    print(' '.join(map(str, dfs(v))))
+    def bfs(start):
+        visited = [False] * (n + 1)
+        queue = deque([start])
+        visited[start] = True
+        result = []
+
+        while queue:
+            node = queue.popleft()
+            result.append(node)
+
+            for neighbor in graph[node]:
+                if not visited[neighbor]:
+                    visited[neighbor] = True
+                    queue.append(neighbor)
+        return result
+    dfs_result = dfs(v)
+    bfs_result = bfs(v)
+
+    print(' '.join(map(str, dfs_result)))
+    print(' '.join(map(str, bfs_result)))
 
 if __name__ == '__main__':
     solution()
