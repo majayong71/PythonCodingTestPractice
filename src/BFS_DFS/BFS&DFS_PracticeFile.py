@@ -1,6 +1,8 @@
 from collections import deque
 
 # ============= 1. 입력 & 초기화 =============
+def solution2() :
+    n, m, v = map
 
 
 # ============= 2. 그래프 생성 =============
