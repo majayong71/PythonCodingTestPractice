@@ -4,8 +4,6 @@ from collections import deque
 def solution2() :
     n, m, v = map
 
-
-
 # ============= 2. 그래프 생성 =============
 
 
