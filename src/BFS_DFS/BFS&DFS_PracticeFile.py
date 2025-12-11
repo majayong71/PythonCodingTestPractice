@@ -34,8 +34,6 @@ def solution3():
 # =============7. 출력 =============
 
 
-
-
 def solution():
     n, m, v = map(int, input().split())
     graph = [[] for _ in range(n + 1)]
