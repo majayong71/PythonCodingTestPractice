@@ -38,12 +38,8 @@ def solution():
                 if not visited[neighbor]: # 방문하지 않은 ( True 가 아닌 ) 경우에는
                     dfs_recursive(neighbor) # 재귀적으로 dfs_recursive 호출
 
-
-
         dfs_recursive(start) # start 를 첫 노드로 전달
         return result
-
-
 
     def bfs(start):
         visited = [False] * (n + 1)
