@@ -13,3 +13,8 @@ from collections import deque
 # ============= 6. BFS 템플릿 =============
 
 # =============7. 출력 ============
+
+def solution():
+    n, m, v = map(int, input().split())
+
+    graph= [[] for _ in range(n + 1)]
