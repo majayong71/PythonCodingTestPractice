@@ -12,5 +12,3 @@ def solution2():
     b = int(input())
 
     print(a/b)
-
-

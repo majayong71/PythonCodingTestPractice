@@ -28,4 +28,4 @@ def solution():
 
     for i in range(1, n+1):
         graph[i].sort()
-
+    
