@@ -1,10 +1,8 @@
 from collections import deque
 
 # ============= 1. 입력 & 초기화 =============
-def solution ():
-    n,m,v = map(int,input().split())
-
-    graph = [[] for _ in range(n)]
+def solution() :
+    n, m, v = map(int,input().split())
 # ============= 2. 그래프 생성 =============
 
 # ============= 3. 간선 연결 =============
@@ -16,3 +14,5 @@ def solution ():
 # ============= 6. BFS 템플릿 =============
 
 # =============7. 출력 ============
+
+
