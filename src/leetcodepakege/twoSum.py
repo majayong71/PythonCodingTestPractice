@@ -22,14 +22,14 @@ class Solution:
             else:
                 right -= 1
 
-    def twoSum2(self, nums: List[int], target: int) -> List[int]:
-
-        indexed = []
-        for i in range(len(nums)):
-            indexed.append((nums[i], i))
+    # def twoSum2(self, nums: List[int], target: int) -> List[int]:
+    #
+    #     indexed = []
+    #     for i in range(len(nums)):
+    #         indexed.append((nums[i], i))
 
 
 if __name__ == '__main__':
     s = Solution()                      # Java: Solution s = new Solution()
-    result = s.twoSum([2,3,5,7,11,13,17,19,23,29,31,37], 68)  # Java: s.twoSum(new int[]{2,7,11,15}, 9)
-    print(result)                       # [0, 1]
+    result = s.twoSum([2,3,5,7,11,13,17,19,23,29,31,37], 68)  # Java: s.twoSum(new int[]{2,3,5,7,11,13,17,19,23,29,31,37}, 68)
+    print(result)                       # [ , ]
