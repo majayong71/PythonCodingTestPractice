@@ -29,6 +29,7 @@ class Solution:
     #         indexed.append((nums[i], i))
 
 
+
 if __name__ == '__main__':
     s = Solution()                      # Java: Solution s = new Solution()
     result = s.twoSum([2,3,5,7,11,13,17,19,23,29,31,37], 68)  # Java: s.twoSum(new int[]{2,3,5,7,11,13,17,19,23,29,31,37}, 68)
