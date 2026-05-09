@@ -22,20 +22,11 @@ class Solution:
             else:
                 right -= 1
 
-    def twoSum2(self, nums: List[int], target: int) -> List[int]:
-
-        indexed = []
-        for i in range(len(nums)):
-            indexed.append((nums[i], i))
-
-        (indexed.sort())
-
-        left = 0
-        right = len(indexed) -1
-
-        while left < right:
-            total = indexed[left][0] + indexed[right][0]
-
+    # def twoSum2(self, nums: List[int], target: int) -> List[int]:
+    #
+    #     indexed = []
+    #     for i in range(len(nums)):
+    #         indexed.append((nums[i], i))
 
 
 
