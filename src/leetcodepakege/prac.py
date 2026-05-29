@@ -40,8 +40,6 @@ class Solution:
         while left < right:
 
 
-
-
             # 현재 왼쪽 값 + 오른쪽 값의 합계
 
                 # 정답 찾음 → 두 값의 원본 인덱스 반환
