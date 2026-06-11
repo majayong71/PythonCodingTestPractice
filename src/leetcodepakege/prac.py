@@ -39,7 +39,6 @@ class Solution:
 
         # 두 포인터가 만나기 전까지 반복
         while left < right:
-
             # 현재 왼쪽 값 + 오른쪽 값의 합계
             total = indexed[left][0] + indexed[right][0]
                 # 정답 찾음 → 두 값의 원본 인덱스 반환
