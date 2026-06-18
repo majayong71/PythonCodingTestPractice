@@ -20,7 +20,6 @@
 #입력: nums = [3,3], 목표 = 6
 #출력: [0,1]
 
-
 class Solution:
     def twosum(self, nums,target):
 
