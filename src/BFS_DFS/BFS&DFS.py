@@ -93,7 +93,6 @@ def solve_dfs_bfs():
 
         DFS 를 구현한다 재귀 or stack 으로
         """
-
     # 4. DFS 구현        재귀 or  stack 스택 # start , node 는 call stack 이다
     def dfs(start):     # start 는 시작지점을 지정하는 파라미터이다.
         visited = [False] * (n + 1) # 방문 체크 배열 (1차원 배열)
