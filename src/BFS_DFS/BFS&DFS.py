@@ -189,6 +189,3 @@ def solution3():
 
 
 
-
-
-
