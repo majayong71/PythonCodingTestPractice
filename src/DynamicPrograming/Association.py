@@ -37,6 +37,9 @@
 시간 제한을 수정한 사람: djm03178
 """
 
+
+
+
 def solution() :
     T = int(input())
 
