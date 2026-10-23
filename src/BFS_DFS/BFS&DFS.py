@@ -110,9 +110,7 @@ def solve_dfs_bfs():
 
         dfs_recursive(start)
         return result
-
     # -------------------------------------------------
-
     # 5. BFS 구현
     def bfs(start):
         visited = [False] * (n +1) # 똑같이 방문 체크 배열을 만들어준다 ( 1차원 배열 )
