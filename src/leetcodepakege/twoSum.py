@@ -19,6 +19,7 @@ class Solution:
         # 제일 큰 값을 가리키는 오른쪽 포인터
         right = len(indexed) - 1
 
+
         # 두 포인터가 만나기 전까지 반복
         while left < right:
 
