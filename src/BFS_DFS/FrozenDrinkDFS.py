@@ -65,3 +65,4 @@ if __name__ == '__main__':
                 result += 1
 
     print(result) # 정답 출력
+
