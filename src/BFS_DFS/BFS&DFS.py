@@ -177,5 +177,3 @@ def solution3():
 
 
 
-
-
