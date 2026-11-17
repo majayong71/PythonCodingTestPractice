@@ -28,3 +28,4 @@ def solution(n):
         if n % i == 0:
             count += 1
     return count
+
