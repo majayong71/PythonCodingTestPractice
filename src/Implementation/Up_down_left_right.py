@@ -68,7 +68,5 @@ def solution() :
     print(x, y)
 
 
-
 if __name__ == '__main__':
     solution()
-
